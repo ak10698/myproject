@@ -1,0 +1,13 @@
+<article class="panel panel-success">
+	<h4 class="panel-heading">{{ Cart.Customer }}</h4>
+	<div class="panel-body">
+		<ul class="list-group">
+			<li class="list-group-item" ng-repeat="item in Cart.Items">
+				<strong>{{ item.Name }} <small>{{ item.Qty }}</small></strong>
+				<span class="badge">
+					{{ item.Price * item.Qty }}
+				</span>
+			</li>
+		</ul>
+	</div>
+</article>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="GGTranslationsWeb">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="GGTranslationsFacade-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/GGTranslationsFacade/GGTranslationsFacade">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="GGTranslationsService-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/GGTranslationsService/GGTranslationsService">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="GGTranslationsDao-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/GGTranslationsDao/GGTranslationsDao">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="GGTranslationsEntities-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/GGTranslationsEntities/GGTranslationsEntities">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="GGTranslationsUtils-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/GGTranslationsUtils/GGTranslationsUtils">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/GGTranslationsWeb/target/classes"/>
+        <property name="context-root" value="GGTranslationsWeb"/>
+    </wb-module>
+</project-modules>

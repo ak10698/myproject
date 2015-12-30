@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/mvc"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:context="http://www.springframework.org/schema/context"
+             xmlns:cache="http://www.springframework.org/schema/cache"
+             xmlns:p='http://www.springframework.org/schema/p'
+             xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache.xsd">
+
+    <context:annotation-config/>
+    <context:component-scan base-package="hm.gg.translations.facade"/>
+    <beans:import resource="classpath:service-context.xml"/>
+ <beans:bean id="transFacade" class="hm.gg.translations.facade.impl.TranslationsFacadeImpl"/> 
+ 
+		
+	
+
+</beans:beans>

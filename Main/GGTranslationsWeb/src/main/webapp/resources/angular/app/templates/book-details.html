@@ -1,0 +1,21 @@
+<article class="panel panel-success">
+	<p class="panel-heading">
+		<h4>{{ Book.Title }} &mdash; {{ Book.SubTitle }}
+			<small>-{{ Book.Author }}</small>
+		</h4>
+	</p>
+	<div class="panel-body">
+		<div class="col-sm-4">
+ 			<img ng-src="{{Book.Image}}" class="img-thumbnail">
+		</div>
+		<div class="col-md-6">
+			<h5>Details...</h5>
+			<p>Pages: {{ Book.Page }}</p>
+			<p>Publisher: {{ Book.Publisher }}</p>
+			<p>Description: {{ Book.Description }}</p>
+		</div>
+	</div>
+	<footer class="panel-footer">
+		<a ng-href="{{ Book.Download }}">Get your copy...</a>
+	</footer>
+</article>
